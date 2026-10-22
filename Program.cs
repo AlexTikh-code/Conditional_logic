@@ -1,6 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
-
-int mark = int.Parse(Console.ReadLine("Enter your average mark in %"));
+﻿
+Console.Write("Enter your average mark in %: ");
+var mark = int.Parse(Console.ReadLine());
 
 if(mark >= 90)
 {
