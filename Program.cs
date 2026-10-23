@@ -51,3 +51,58 @@ switch(day)
         Console.WriteLine("Invalid day.");
         break;
 }
+
+
+
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine($" Iteration: {i}");
+}
+for (int i = 5; i >= 0; i--)
+{
+    Console.WriteLine($" Iteration: {i}");
+}
+for(int i = 2; i <= 10; i=i+2)
+{
+    Console.WriteLine($"{i}");
+}
+
+
+int n = 1;
+int num = int.Parse(Console.ReadLine());
+while (n <= num)
+{
+    Console.WriteLine($"Iteration: {n}");
+    n++;
+}
+
+string? password;
+int attempts = 0;
+do
+{
+    attempts++;
+    if (attempts >= 4)
+    {
+        break;
+    }
+    Console.Write("Enter your password: ");
+    password = Console.ReadLine();
+} while (password != "humber2026");
+if(password == "humber2026")
+{
+    Console.WriteLine("Access granted.");
+}
+else
+{
+    Console.WriteLine("Access denied.");
+}
+
+
+
+string[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+};
+
+foreach (string dayName in days)
+{
+    Console.WriteLine(dayName);
+}
